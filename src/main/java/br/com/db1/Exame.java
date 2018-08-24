@@ -2,7 +2,7 @@ package br.com.db1;
 
 import java.util.Date;
 
-public class Exame {
+public class Exame extends Paciente{
 
 	private String unidade;
 
@@ -11,11 +11,11 @@ public class Exame {
 	private Date dataRecepecao;
 
 	private Date dataImpressao;
-
 	
-	public Integer calculaIdade() {
-		return null;
-	}
+	private Date dataHoje;
+	
+	private Integer idade;
+
 
 	public String getUnidade() {
 		return unidade;
@@ -49,8 +49,18 @@ public class Exame {
 		this.dataImpressao = dataImpressao;
 	}
 
-	public Boolean validaConvenio() {
-		return null;
+	public Date getDataHoje() {
+		return dataHoje;
 	}
 
+	public void setDataHoje(Date dataHoje) {
+		this.dataHoje = dataHoje;
+	}
+	public Boolean validaConvenio() {
+		return true;
+	}
+	
+	public Integer calculaIdade() { 
+		return idade;
+	}
 }

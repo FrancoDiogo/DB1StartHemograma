@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Paciente extends Pessoa {
 
-	private Date dataNascimento;
+	protected Date dataNascimento;
 
 	private String numeroConvenio;
 
